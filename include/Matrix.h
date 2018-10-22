@@ -4,7 +4,7 @@
 class Matrix
 {
     public:
-        Matrix(int size = 0);
+        Matrix(int _size = 0);
         void init(void);
         void setElement(int firstDim, int secondDim, int value);
         int getElement(int firstDim, int secondDim);
