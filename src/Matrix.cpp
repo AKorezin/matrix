@@ -1,7 +1,9 @@
 #include "Matrix.h"
 #include <cstdlib>
 
-Matrix::Matrix(int _size) : size{_size}, angle{0} {
+thread_local int Matrix::angle = 0;
+
+Matrix::Matrix(int _size) : size{_size} {
 }
 
 void Matrix::init(void) {

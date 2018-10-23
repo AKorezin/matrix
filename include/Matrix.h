@@ -11,10 +11,11 @@ class Matrix
         void setSize(int size);
         int getSize(void);
         void rot(void);
+        void threadStart(void);
     private:
         int calcPos(int, int);
         int *data;
         int size;
-        int angle;
+        static thread_local int angle;
 };
 #endif
