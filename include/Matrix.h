@@ -8,11 +8,11 @@ class Matrix
         void init(void);
         void setElement(int firstDim, int secondDim, int value);
         int getElement(int firstDim, int secondDim);
-
         void setSize(int size);
         int getSize(void);
         void rot(void);
     private:
+        int calcPos(int, int);
         int *data;
         int size;
         int angle;
