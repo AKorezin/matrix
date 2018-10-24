@@ -8,8 +8,8 @@ Matrix::Matrix(int _size) : size{_size} {
 
 void Matrix::init(void) {
     data = new int[size*size];
-    for (int iter=size*size;iter>-1;iter--) {
-        data[iter] = rand() % 100;
+    for (int iter=size*size;iter;iter--) {
+        data[iter-1] = rand() % 100;
     }
 }
 
@@ -45,3 +45,4 @@ int Matrix::calcPos(int firstDim, int secondDim) {
 
     return position;
 }
+
